@@ -1,0 +1,1405 @@
+{
+  "abercrombie": {
+    "eval_method": "contained_in_output",
+    "instruction": "A mark is generic if it is the common name for the product. A mark is descriptive if it describes a purpose, nature, or attribute of the product. A mark is suggestive if it suggests or implies a quality or characteristic of the product. A mark is arbitrary if it is a real English word that has no relation to the product. A mark is fanciful if it is an invented word.\n\n{{text}} What is the type of mark?\nAnswer:",
+    "answer_space": [
+      "generic",
+      "descriptive",
+      "suggestive",
+      "arbitrary",
+      "fanciful"
+    ]
+  },
+  "canada_tax_court_outcomes": {
+    "eval_method": "contained_in_output",
+    "instruction": "INSTRUCTIONS: Indicate whether the following judgment excerpt from a Tax Court of Canada decision allows the appeal or dismisses the appeal. Where the result is mixed, indicate that the appeal was allowed. Ignore costs orders. Where the outcome is unclear indicate other.  \nOptions: allowed, dismissed, other\n\nJUDGMENT EXCERPT: {{text}}\nOUTCOME:",
+    "answer_space": [
+      "allowed",
+      "dismissed",
+      "other"
+    ]
+  },
+  "citation_prediction_classification": {
+    "eval_method": "contained_in_output",
+    "instruction": "Can the case can be used as a citation for the provided text?\n\nText: {{text}}\nCitation: {{citation}}\nSupportive?",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "citation_prediction_open": {
+    "eval_method": "contained_in_output",
+    "instruction": "Generate the best citation for the following texts, imagining you are in the following circuits.\n\nText: {{text}}\nCircuit: {{circuit}}\nCitation:",
+    "answer_space": [
+      "<open-ended>"
+    ]
+  },
+  "consumer_contracts_qa": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{contract}}\n\nQuestion: {{question}} Answer Yes or No.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_confidentiality_of_agreement": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party shall not disclose the fact that Agreement was agreed or negotiated.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_explicit_identification": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that all Confidential Information shall be expressly identified by the Disclosing Party.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_inclusion_of_verbally_conveyed_information": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that Confidential Information may include verbally conveyed information.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_limited_use": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_no_licensing": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Agreement shall not grant Receiving Party any right to Confidential Information.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_notice_on_compelled_disclosure": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_permissible_acquirement_of_similar_information": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party may acquire information similar to Confidential Information from a third party.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_permissible_copy": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party may create a copy of some Confidential Information in some circumstances.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_permissible_development_of_similar_information": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party may independently develop information similar to Confidential Information.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_permissible_post-agreement_possession": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_return_of_confidential_information": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_sharing_with_employees": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party may share some Confidential Information with some of Receiving Party's employees.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_sharing_with_third-parties": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that the Receiving Party may share some Confidential Information with some third-parties (including consultants, agents and professional advisors).\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_nli_survival_of_obligations": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the clause provides that some obligations of Agreement may survive termination of Agreement.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "contract_qa": {
+    "eval_method": "contained_in_output",
+    "instruction": "Answer the question.\n\nClause: {{text}}\nQuestion: {{question}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "corporate_lobbying": {
+    "eval_method": "contained_in_output",
+    "instruction": "You are a lobbyist analyzing Congressional bills for their impacts on companies. \nGiven the title and summary of the bill, plus information on the company from its 10K SEC filing, it is your job to determine if a bill is at least somewhat relevant to a company in terms of whether it could impact the company's bottom-line if it was enacted (by saying YES or NO; note the all-caps). \nOfficial title of bill: {{bill_title}}\nOfficial summary of bill: {{bill_summary}}\nCompany name: {{company_name}}\nCompany business description: {{company_description}}\nIs this bill potentially relevant to the company? FINAL ANSWER:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "cuad_affiliate_license-licensee": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe a license grant to a licensee (incl. sublicensor) and the affiliates of such licensee/sublicensor?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_affiliate_license-licensor": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_anti-assignment": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause require consent or notice of a party if the contract is assigned to a third party?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_audit_rights": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause give a party the right to audit the books, records, or physical locations of the counterparty to ensure compliance with the contract?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_cap_on_liability": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify a cap on liability upon the breach of a party’s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_change_of_control": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause give one party the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_competitive_restriction_exception": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause mention exceptions or carveouts to Non-Compete, Exclusivity and No-Solicit of Customers?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_covenant_not_to_sue": {
+    "eval_method": "contained_in_output",
+    "instruction": "Is a party restricted from contesting the validity of the counterparty’s ownership of intellectual property or otherwise bringing a claim against the counterparty for matters unrelated to the contract?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_effective_date": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify the date upon which the agreement becomes effective?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_exclusivity": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify exclusive dealing commitment with the counterparty? This includes a commitment to procure all “requirements” from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on collaborating or working with other parties), whether during the contract or after the contract ends (or both).\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_expiration_date": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify the date upon which the initial term expires?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_governing_law": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify which state/country's law governs the contract?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_insurance": {
+    "eval_method": "contained_in_output",
+    "instruction": "Is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_ip_ownership_assignment": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does intellectual property created by one party become the property of the counterparty, either per the terms of the contract or upon the occurrence of certain events?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_irrevocable_or_perpetual_license": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify a license grant that is irrevocable or perpetual?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_joint_ip_ownership": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause provide for joint or shared ownership of intellectual property between the parties to the contract?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_license_grant": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause contain a license granted by one party to its counterparty?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_liquidated_damages": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee)?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_minimum_commitment": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify a minimum order size or minimum amount or units pertime period that one party must buy from the counterparty?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_most_favored_nation": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause state that if a third party gets better terms on the licensing or sale of technology/goods/services described in the contract, the buyer of such technology/goods/services under the contract shall be entitled to those better terms?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_no-solicit_of_customers": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause restrict a party from contracting or soliciting customers or partners of the counterparty, whether during the contract or after the contract ends (or both)?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_no-solicit_of_employees": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause restrict a party’s soliciting or hiring employees and/or contractors from the counterparty, whether during the contract or after the contract ends (or both)?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_non-compete": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause restrict the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_non-disparagement": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause require a party not to disparage the counterparty?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_non-transferable_license": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause limit the ability of a party to transfer the license being granted to a third party?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_notice_period_to_terminate_renewal": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify a notice period required to terminate renewal?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_post-termination_services": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause subject a party to obligations after the termination or expiration of a contract, including any post-termination transition, payment, transfer of IP, wind-down, last-buy, or similar commitments?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_price_restrictions": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause place a restriction on the ability of a party to raise or reduce prices of technology, goods, or services provided?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_renewal_term": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify a renewal term?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_revenue-profit_sharing": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause require a party to share revenue or profit with the counterparty for any technology, goods, or services?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_rofr-rofo-rofn": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause grant one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_source_code_escrow": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause require one party to deposit its source code into escrow with a third party, which can be released to the counterparty upon the occurrence of certain events (bankruptcy, insolvency, etc.)?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_termination_for_convenience": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify that one party can terminate this contract without cause (solely by giving a notice and allowing a waiting period to expire)?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_third_party_beneficiary": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify that that there a non-contracting party who is a beneficiary to some or all of the clauses in the contract and therefore can enforce its rights against a contracting party?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_uncapped_liability": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify that a party’s liability is uncapped upon the breach of its obligation in the contract? This also includes uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_unlimited-all-you-can-eat-license": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause grant one party an “enterprise,” “all you can eat” or unlimited usage license?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_volume_restriction": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "cuad_warranty_duration": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause specify a duration of any warranty against defects or errors in technology, products, or services provided under the contract?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "definition_classification": {
+    "eval_method": "contained_in_output",
+    "instruction": "Identify if the sentence defines a term.\n\nSentence: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "definition_extraction": {
+    "eval_method": "any_in_output",
+    "instruction": "Identify the term being defined in each sentence.\n\nSentence: {{text}}\nTerm:",
+    "answer_space": [
+      "<open-ended>"
+    ]
+  },
+  "diversity_1": {
+    "eval_method": "contained_in_output",
+    "instruction": "Diversity jurisdiction exists when there is (1) complete diversity between plaintiffs and defendants, and (2) the amount-in-controversy (AiC) is greater than $75k.\n\n{{text}} Is there diversity jurisdiction?\nA:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "diversity_2": {
+    "eval_method": "contained_in_output",
+    "instruction": "Diversity jurisdiction exists when there is (1) complete diversity between plaintiffs and defendants, and (2) the amount-in-controversy (AiC) is greater than $75k.\n\n{{text}} Is there diversity jurisdiction?\nA:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "diversity_3": {
+    "eval_method": "contained_in_output",
+    "instruction": "Diversity jurisdiction exists when there is (1) complete diversity between plaintiffs and defendants, and (2) the amount-in-controversy (AiC) is greater than $75k.\n\n{{text}} Is there diversity jurisdiction?\nA:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "diversity_4": {
+    "eval_method": "contained_in_output",
+    "instruction": "Diversity jurisdiction exists when there is (1) complete diversity between plaintiffs and defendants, and (2) the amount-in-controversy (AiC) is greater than $75k.\n\n{{text}} Is there diversity jurisdiction?\nA:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "diversity_5": {
+    "eval_method": "contained_in_output",
+    "instruction": "Diversity jurisdiction exists when there is (1) complete diversity between plaintiffs and defendants, and (2) the amount-in-controversy (AiC) is greater than $75k.\n\n{{text}} Is there diversity jurisdiction?\nA:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "diversity_6": {
+    "eval_method": "contained_in_output",
+    "instruction": "Diversity jurisdiction exists when there is (1) complete diversity between plaintiffs and defendants, and (2) the amount-in-controversy (AiC) is greater than $75k.\n\n{{text}} Is there diversity jurisdiction?\nA:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "function_of_decision_section": {
+    "eval_method": "contained_in_output",
+    "instruction": "Classify the following text using the following definitions. \n\n- Facts: The paragraph describes the faction background that led up to the present lawsuit.\n- Procedural History: The paragraph describes the course of litigation that led to the current proceeding before the court.\n- Issue: The paragraph describes the legal or factual issue that must be resolved by the court.\n- Rule: The paragraph describes a rule of law relevant to resolving the issue.\n- Analysis: The paragraph analyzes the legal issue by applying the relevant legal principles to the facts of the present dispute.\n- Conclusion: The paragraph presents a conclusion of the court.\n- Decree: The paragraph constitutes a decree resolving the dispute.\n\nText: {{Paragraph}}\nLabel:",
+    "answer_space": [
+      "Facts",
+      "Procedural History",
+      "Issue",
+      "Rule",
+      "Analysis",
+      "Conclusion",
+      "Decree"
+    ]
+  },
+  "hearsay": {
+    "eval_method": "contained_in_output",
+    "instruction": "Hearsay is an out-of-court statement introduced to prove the truth of the matter asserted.\n\n{{text}} Is there hearsay?\nA:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "insurance_policy_interpretation": {
+    "eval_method": "contained_in_output",
+    "instruction": "Read the insurance policy and the insurance claim. Answer whether the claim is covered under the policy with [A: Yes; B: No; C: It’s ambiguous]\n\nPolicy: {{policy}}\nClaim: {{claim}}\nLabel:",
+    "answer_space": [
+      "A",
+      "C",
+      "B"
+    ]
+  },
+  "international_citizenship_questions": {
+    "eval_method": "contained_in_output",
+    "instruction": "Answer the following questions considering the state of international law on January 1st, 2020.\n\nQuestion: {{question}} Answer Yes or No.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "jcrew_blocker": {
+    "eval_method": "contained_in_output",
+    "instruction": "The JCrew Blocker is a provision that typically includes (1) a prohibition on the borrower from transferring IP to an unrestricted subsidiary, and (2) a requirement that the borrower obtains the consent of its agent/lenders before transferring IP to any subsidiary. Do the following provisions contain JCrew Blockers?\n\nProvision: {{text}}\n\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_benefits": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss public benefits and social services that people can get from the government, like for food, disability, old age, housing, medical help, unemployment, child care, or other social needs?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_business": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues faced by people who run small businesses or nonprofits, including around incorporation, licenses, taxes, regulations, and other concerns. It also includes options when there are disasters, bankruptcies, or other problems?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_consumer": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues people face regarding money, insurance, consumer goods and contracts, taxes, and small claims about quality of service?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_courts": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss the logistics of how a person can interact with a lawyer or the court system. It applies to situations about procedure, rules, how to file lawsuits, how to hire lawyers, how to represent oneself, and other practical matters about dealing with these systems?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_crime": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues in the criminal system including when people are charged with crimes, go to a criminal trial, go to prison, or are a victim of a crime?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_divorce": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues around filing for divorce, separation, or annulment, getting spousal support, splitting money and property, and following the court processes?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_domestic_violence": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss dealing with domestic violence and abuse, including getting protective orders, enforcing them, understanding abuse, reporting abuse, and getting resources and status if there is abuse?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_education": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues around school, including accommodations for special needs, discrimination, student debt, discipline, and other issues in education?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_employment": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues related to working at a job, including discrimination and harassment, worker's compensation, workers rights, unions, getting paid, pensions, being fired, and more?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_estates": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss planning for end-of-life, possible incapacitation, and other special circumstances that would prevent a person from making decisions about their own well-being, finances, and property. This includes issues around wills, powers of attorney, advance directives, trusts, guardianships, conservatorships, and other estate issues that people and families deal with?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_family": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues that arise within a family, like divorce, adoption, name change, guardianship, domestic violence, child custody, and other issues?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_health": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues with accessing health services, paying for medical care, getting public benefits for health care, protecting one's rights in medical settings, and other issues related to health?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_housing": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss issues with paying your rent or mortgage, landlord-tenant issues, housing subsidies and public housing, eviction, and other problems with your apartment, mobile home, or house?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_immigration": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss visas, asylum, green cards, citizenship, migrant work and benefits, and other issues faced by people who are not full citizens in the US?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_torts": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss problems that one person has with another person (or animal), like when there is a car accident, a dog bite, bullying or possible harassment, or neighbors treating each other badly?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "learned_hands_traffic": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the post discuss problems with traffic and parking tickets, fees, driver's licenses, and other issues experienced with the traffic system. It also concerns issues with car accidents and injuries, cars' quality, repairs, purchases, and other contracts?\n\nPost: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "legal_reasoning_causality": {
+    "eval_method": "contained_in_output",
+    "instruction": "Do the following opinion excerpts rely on statistical evidence? Answer Yes or No.\n\nExcerpt: {{text}}\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "maud_ability_to_consummate_concept_is_subject_to_mae_carveouts": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Is the “ability to consummate” concept subject to Material Adverse Effect (MAE) carveouts?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B"
+    ]
+  },
+  "maud_accuracy_of_fundamental_target_rws_bringdown_standard": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: How accurate must the fundamental representations and warranties be according to the bring down provision?\nOption A: Accurate at another materiality standard (e.g., hybrid standard)\nOption B: Accurate in all material respects\nOption C: Accurate in all respects\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "C",
+      "A"
+    ]
+  },
+  "maud_accuracy_of_target_capitalization_rw_(outstanding_shares)_bringdown_standard_answer": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: How accurate must the capitalization representations and warranties be according to the bring down provision?\nOption A: Accurate in all material respects\nOption B: Accurate in all respects\nOption C: Accurate in all respects with below-threshold carveout\nOption D: Accurate in all respects with de minimis exception\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "maud_accuracy_of_target_general_rw_bringdown_timing_answer": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: When are representations and warranties required to be made according to the bring down provision?\nOption A: At Closing Only\nOption B: At Signing & At Closing\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_additional_matching_rights_period_for_modifications_(cor)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: How long is the additional matching rights period for modifications in case the board changes its recommendation?\nOption A: 2 business days or less\nOption B: 3 business days\nOption C: 3 days\nOption D: 4 business days\nOption E: 5 business days\nOption F: > 5 business days\nOption G: None\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B",
+      "C",
+      "E",
+      "D"
+    ]
+  },
+  "maud_application_of_buyer_consent_requirement_(negative_interim_covenant)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What negative covenants does the requirement of Buyer consent apply to?\nOption A: Applies only to specified negative covenants\nOption B: Applies to all negative covenants\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_buyer_consent_requirement_(ordinary_course)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: In case the Buyer's consent for the acquired company's ordinary business operations is required, are there any limitations on the Buyer's right to condition, withhold, or delay their consent?\nOption A: Yes. Consent may not be unreasonably withheld, conditioned or delayed.\nOption B: No.\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B"
+    ]
+  },
+  "maud_change_in_law__subject_to_disproportionate_impact_modifier": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Do changes in law that have disproportionate impact qualify for Material Adverse Effect (MAE)?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_changes_in_gaap_or_other_accounting_principles__subject_to_disproportionate_impact_modifier": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Do changes in GAAP or other accounting principles that have disproportionate impact qualify for Material Adverse Effect (MAE)?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_cor_permitted_in_response_to_intervening_event": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Is Change of Recommendation permitted in response to an intervening event?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B"
+    ]
+  },
+  "maud_cor_permitted_with_board_fiduciary_determination_only": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Is Change of Recommendation permitted as long as the board determines that such change is required to fulfill its fiduciary obligations?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_cor_standard_(intervening_event)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What standard should the board follow when determining whether to change its recommendation in response to an intervening event?\nOption A: \"Breach\" of fiduciary duties\nOption B: \"Inconsistent\" with fiduciary duties\nOption C: \"Reasonably likely/expected breach\" of fiduciary duties\nOption D: \"Reasonably likely/expected to be inconsistent\" with fiduciary duties\nOption E: \"Reasonably likely/expected violation\" of fiduciary duties\nOption F: \"Required to comply\" with fiduciary duties\nOption G: \"Violation\" of fiduciary duties\nOption H: More likely than not violate fiduciary duties\nOption I: Other specified standard\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "C",
+      "B",
+      "D",
+      "H",
+      "E",
+      "I"
+    ]
+  },
+  "maud_cor_standard_(superior_offer)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What standard should the board follow when determining whether to change its recommendation in connection with a superior offer?\nOption A: \"Breach\" of fiduciary duties\nOption B: \"Inconsistent\" with fiduciary duties\nOption C: \"Reasonably likely/expected breach\" of fiduciary duties\nOption D: \"Reasonably likely/expected to be inconsistent\" with fiduciary duties\nOption E: \"Reasonably likely/expected violation\" of fiduciary duties\nOption F: \"Required to comply\" with fiduciary duties\nOption G: \"Violation\" of fiduciary duties\nOption H: More likely than not violate fiduciary duties\nOption I: None\nOption J: Other specified standard\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "D",
+      "B",
+      "H",
+      "J",
+      "C",
+      "G",
+      "I",
+      "E"
+    ]
+  },
+  "maud_definition_contains_knowledge_requirement_-_answer": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What is the knowledge requirement in the definition of “Intervening Event”?\nOption A: Known, but consequences unknown or not reasonably foreseeable, at signing\nOption B: Known, but consequences unknown, at signing\nOption C: Not known and not reasonably foreseeable at signing\nOption D: Not known at signing\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "maud_definition_includes_asset_deals": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What qualifies as a superior offer in terms of asset deals?\nOption A: \"All or substantially all\"\nOption B: 50%\nOption C: Greater than 50% but not \"all or substantially all\"\nOption D: Less than 50%\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "maud_definition_includes_stock_deals": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What qualifies as a superior offer in terms of stock deals?\nOption A: \"All or substantially all\"\nOption B: 50%\nOption C: Greater than 50% but not \"all or substantially all\"\nOption D: Less than 50%\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "maud_fiduciary_exception__board_determination_standard": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Under what circumstances could the Board take actions on a different acquisition proposal notwithstanding the no-shop provision?\nOption A: If failure to take actions would lead to \"breach\" of fiduciary duties\nOption B: If failure to take actions would be \"inconsistent\" with fiduciary duties\nOption C: If failure to take actions would lead to \"reasonably likely/expected breach\" of fiduciary duties\nOption D: If failure to take actions would lead to \"reasonably likely/expected to be inconsistent\" with fiduciary duties\nOption E: If failure to take actions would lead to \"reasonably likely/expected violation\" of fiduciary duties\nOption F: If taking such actions is \"required to comply\" with fiduciary duties\nOption G: If failure to take actions would lead to \"violation\" of fiduciary duties\nOption H: Under no circumstances could the Board do so.\nOption I: Other circumstances\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "D",
+      "E",
+      "H",
+      "B",
+      "I",
+      "C",
+      "F",
+      "G"
+    ]
+  },
+  "maud_fiduciary_exception_board_determination_trigger_(no_shop)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What type of offer could the Board take actions on notwithstanding the no-shop provision?\nOption A: Acquisition Proposal only\nOption B: Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_financial_point_of_view_is_the_sole_consideration": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Is “financial point of view” the sole consideration when determining whether an offer is superior?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B"
+    ]
+  },
+  "maud_fls_(mae)_standard": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What is the Forward Looking Standard (FLS) with respect to Material Adverse Effect (MAE)?\nOption A: \"Could\" (reasonably) be expected to\nOption B: \"Would\"\nOption C: \"Would\" (reasonably) be expected to\nOption D: No\nOption E: Other forward-looking standard\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "C",
+      "E",
+      "A"
+    ]
+  },
+  "maud_general_economic_and_financial_conditions_subject_to_disproportionate_impact_modifier": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Do changes caused by general economic and financial conditions that have disproportionate impact qualify for Material Adverse Effect (MAE)?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_includes_consistent_with_past_practice": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Does the wording of the Efforts Covenant clause include “consistent with past practice”?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_initial_matching_rights_period_(cor)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: How long is the initial matching rights period in case the board changes its recommendation?\nOption A: 2 business days or less\nOption B: 3 business days\nOption C: 3 calendar days\nOption D: 4 business days\nOption E: 4 calendar days\nOption F: 5 business days\nOption G: Greater than 5 business days\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "D",
+      "B",
+      "F",
+      "E",
+      "C"
+    ]
+  },
+  "maud_initial_matching_rights_period_(ftr)": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: How long is the initial matching rights period in connection with the Fiduciary Termination Right (FTR)?\nOption A: 2 business days or less\nOption B: 3 business days\nOption C: 3 calendar days\nOption D: 4 business days\nOption E: 4 calendar days\nOption F: 5 business days\nOption G: 5 calendar days\nOption H: Greater than 5 business days\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "D",
+      "F",
+      "C",
+      "B",
+      "E"
+    ]
+  },
+  "maud_intervening_event_-_required_to_occur_after_signing_-_answer": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Is an “Intervening Event” required to occur after signing?\nOption A: No. It may occur or arise prior to signing.\nOption B: Yes. It must occur or arise after signing.\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B"
+    ]
+  },
+  "maud_knowledge_definition": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What counts as Knowledge?\nOption A: Actual knowledge\nOption B: Constructive knowledge\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B"
+    ]
+  },
+  "maud_liability_standard_for_no-shop_breach_by_target_non-do_representatives": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What is the liability standard for no-shop breach by Target Non-D&O Representatives?\nOption A: Reasonable standard\nOption B: Strict liability\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "B"
+    ]
+  },
+  "maud_ordinary_course_efforts_standard": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What is the efforts standard?\nOption A: Commercially reasonable efforts\nOption B: Flat covenant (no efforts standard)\nOption C: Reasonable best efforts\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A",
+      "C"
+    ]
+  },
+  "maud_pandemic_or_other_public_health_event__subject_to_disproportionate_impact_modifier": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Do pandemics or other public health events have to have disproportionate impact to qualify for Material Adverse Effect (MAE)?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_pandemic_or_other_public_health_event_specific_reference_to_pandemic-related_governmental_responses_or_measures": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: Is there specific reference to pandemic-related governmental responses or measures in the clause that qualifies pandemics or other public health events for Material Adverse Effect (MAE)?\nOption A: No\nOption B: Yes\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_relational_language_(mae)_applies_to": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What carveouts pertaining to Material Adverse Effect (MAE) does the relational language apply to?\nOption A: All MAE carveouts\nOption B: No\nOption C: Some MAE carveouts\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "A",
+      "C"
+    ]
+  },
+  "maud_specific_performance": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What is the wording of the Specific Performance clause regarding the parties’ entitlement in the event of a contractual breach?\nOption A: \"entitled to seek\" specific performance\nOption B: \"entitled to\" specific performance\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "B",
+      "A"
+    ]
+  },
+  "maud_tail_period_length": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: How long is the Tail Period?\nOption A: 12 months or longer\nOption B: Other\nOption C: within 12 months\nOption D: within 6 months\nOption E: within 9 months\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "C",
+      "E",
+      "D",
+      "A"
+    ]
+  },
+  "maud_type_of_consideration": {
+    "eval_method": "contained_in_output",
+    "instruction": "Instruction: Read the segment of a merger agreement and answer the multiple-choice question by choosing the option that best characterizes the agreement.\nQuestion: What type of consideration is specified in this agreement?\nOption A: All Cash\nOption B: All Stock\nOption C: Mixed Cash/Stock\nOption D: Mixed Cash/Stock: Election\n\nMerger Agreement: {{text}}\nAnswer:",
+    "answer_space": [
+      "D",
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "nys_judicial_ethics": {
+    "eval_method": "contained_in_output",
+    "instruction": "Imagine your are the New York State Unified Court System Advisory Committee on Judicial Ethics. You've received the following question(s). Answer them as either \"Yes\" or \"No\".\n\nQuestion: {{question}}\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "opp115_data_retention": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe how long user information is stored?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "opp115_data_security": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe how user information is protected?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "opp115_do_not_track": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe if and how Do Not Track signals for online tracking and advertising are honored?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "opp115_first_party_collection_use": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe how and why a service provider collects user information?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "opp115_international_and_specific_audiences": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe practices that pertain only to a specific group of users (e.g., children, Europeans, or California residents)?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "opp115_policy_change": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe if and how users will be informed about changes to the privacy policy?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "opp115_third_party_sharing_collection": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe how user information may be shared with or collected by third parties?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "opp115_user_access,_edit_and_deletion": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe if and how users may access, edit, or delete their information?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "opp115_user_choice_control": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the clause describe the choices and control options available to users?\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "oral_argument_question_purpose": {
+    "eval_method": "contained_in_output",
+    "instruction": "Classify the function that the question serves. Options: Background, Clarification, Communicate, Criticism, Humor, Implications, Support\n\nQuestion: {{question}}\nAnswer:",
+    "answer_space": [
+      "Background",
+      "Clarification",
+      "Communicate",
+      "Criticism",
+      "Humor",
+      "Implications",
+      "Support"
+    ]
+  },
+  "overruling": {
+    "eval_method": "contained_in_output",
+    "instruction": "Does the sentence contain language overruling a previous case?\n\nSentence: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "personal_jurisdiction": {
+    "eval_method": "contained_in_output",
+    "instruction": "There is personal jurisdiction over a defendant in the state where the defendant is domiciled, or when (1) the defendant has sufficient contacts with the state, such that they have availed itself of the privileges of the state and (2) the claim arises out of the nexus of the defendant's contacts with the state.\n\n{{text}} Is there personal jurisdiction?\nA:",
+    "answer_space": [
+      "No",
+      "Yes"
+    ]
+  },
+  "privacy_policy_entailment": {
+    "eval_method": "contained_in_output",
+    "instruction": "Classify if the description of each clause is correct.\n\nClause: {{text}}\nDescription: {{description}}\nLabel:",
+    "answer_space": [
+      "Correct",
+      "Incorrect"
+    ]
+  },
+  "privacy_policy_qa": {
+    "eval_method": "contained_in_output",
+    "instruction": "Classify if the clause is relevant to answering the question.\n\nClause: {{text}}\nQuestion: {{question}}\nLabel:",
+    "answer_space": [
+      "Relevant",
+      "Irrelevant"
+    ]
+  },
+  "proa": {
+    "eval_method": "contained_in_output",
+    "instruction": "A private right of action is when a regular person, a private citizen, is legally entitled to enforce their rights under a given statute. Does the clause specify a private right of action?\n\nClause: {{text}}\nA:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "rule_qa": {
+    "eval_method": "contained_in_output",
+    "instruction": "Q: {{text}}\nA:",
+    "answer_space": [
+      "Diversity jurisdiction exists when the amount in controversy exceeds $75,000 and the plaintiffs and defendants are completely diverse (i.e. no plaintiff shares a state of citizenship with any defendant)",
+      "28 USC § 1332",
+      "28 U.S.C. § 1367",
+      "Nerve center test",
+      "Rule 23",
+      "The headquarters of the corporation, i.e. where the high level officers direct, control, and coordinate the corporation's activities.",
+      "Numerosity, commonality, typicality, adequacy.",
+      "There must be sufficient minimum contacts between the defendant and the forum state, the claim must arise out of the nexus of these contacts, and the excercise of jurisdiction must be reasonable in light of these factors.",
+      "Per 1391(b), venue is proper in (a) any district where any defendant resides if all defendants reside in the same state, (b) a district in which a substantial part of the events giving rise to claim occured, or (c) if no district exists which satisfies (a) or (b), then any district in which any defendant is subject to the court's personal jurisdiction.",
+      "Courts typically use a 2-part test when deciding forum non conveniens. The first part is a balancing test of both private and public factors, and the second looks at what adequate alternative courts are available. Private Factors include (1) ease of access to evidence, (2) interest of the two parties in their connections with the respective forums, (3) the plaintiff's chosen court would be burdensome to the defendant, (4) ease of obtaining witnesses, and (5) enforceability of judgment. Public Factors include (1) whether the trial would involve multiple sets of laws, thus potentially confusing a jury, (2) having juries who may have a connection to the case, (3) local interest in having local interests heard at home, and (4) having the trial in a place where state laws govern.",
+      "Rule 4.",
+      "First, the court should weed out those allegations in the complaint that are merely \"conclusory,\" as the court is not required to accept such statements as truth.14 Next, the court must \"draw on its judicial experience and common sense\" to determine the plausibility of the factual allegations.",
+      "A three-part test that determines whether an individual has received due process under the Constitution. The test balances (1) the importance of the interest at stake; (2) the risk of an erroneous deprivation of the interest because of the procedures used, and the probable value of additional procedural safeguards; and (3) the government's interest.",
+      "Under a test provided in South Dakota v. Dole, 483 U.S. 203 (1987),  for Congress to place a  condition on receipt of federal funds by a state, the spending has to serve the general welfare, the condition placed on the state must be unambiguous, the condition has to relate to the particular federal program, unconstitutional action cannot be a contingency of receipt of the funds, and the amount in question cannot be so great that it can be considered coercive to the state's acceptance of the condition.",
+      "Evidence is relevant if: (a) it has any tendency to make a fact or more less probable; and (b) the fact is of consequence in determining the action",
+      "The court may exclude relevant evidence if its probative value is substantially outweighed by a danger of one or more of the following: unfair prejudice, confusing the issues, misleading the jury, undue delay, wasting time, or needlessly presenting cumulative evidence.",
+      "Hearsay is an out of court statement introduced to prove the truth of the matter asserted.",
+      "It only applies in criminal cases for testimonial evidence offered against the defendant",
+      "Sworn out-of-court statements made by declarants who testify as witnesses, in court and under oath, in the very proceedings in which their earlier statements are offered as evidence, are not hearsay under FRE.",
+      "Evidence of a statement made by the declarant is admissible when offered against the declarant.",
+      "If someone introduces evidence against you that’s admissible, you can introduce the rest of that evidence if needed to provide context for the evidence",
+      "If someone says something and the other party is acts in a way that manifests belief in that statement, that can be considered as an admission. Silence can also manifest belief.",
+      "Under FRE, the judge decides whether the declarant was authorized (a preliminary question)",
+      "Under CEC, the judge applies a sufficiency standard and then gives to jury to decide whether the person is actually authorized",
+      "Co-conspirator admissions are those made by a co-conspirator of the person against whom it’s being offered, during and in furtherance of the conspiracy.",
+      "The admission of certain “powerfully incriminating extrajudicial statements” by a non-testifying codefendant violates the CC, even if a limiting instruction is used.",
+      "A present sense impression is a statement describing or explaining an event or condition, made while or immediately after the declarant perceived it. It requires (1) firsthand knowledge, and (2) needs to be close to contemporaneous.",
+      "In civil or homicide cases",
+      "Any case.",
+      "(1) The declarant made the statement while believing their death to be imminent (2) The statement was about the cause or circumstances of the death (3) The declarant has personal knowledge",
+      "Due Process can require the admission of some evidence offered by a criminal defendant, even if other evidence rules would violate their use (e.g., hearsay)",
+      "First, the contested information must qualify as appropriate subject matter. Second, the plaintiffs must demonstrate they took reasonable precautions to protect the contested information. Third, the the plaintiffs must demonstrate that the defendants inappropriately acquired the information.",
+      "“process, machine, manufacture, or composition of matter.”",
+      "35 USC 101",
+      "35 USC 103",
+      "35 USC 112",
+      "First, we ask if the patent claims a patent-ineligible law of nature, natural phenomenon, or abstract idea. If it does, we then ask if the patent  supplies a sufficiently “inventive concept” which transforms the ineligible law of nature into a patent-eligible application of the ineligible subject matter.",
+      "A patent is obvious if “some motivation or suggestion to combine the prior art teachings” can be found in the prior art, the nature of the problem, or the knowledge of a person having ordinary skill in the art",
+      "Per §107, successful application of the fair use defense requires weighing four factors: (1) the purpose and character of the use, (2) the nature of the copyrighted work, (3) the amount and substantiality of the portion used, (4) the effect of the use upon the potential market or for the value of the copyrighted work.",
+      "Generic, descriptive, suggestive, arbitrary, fanciful",
+      "Generic marks are those which connote the basic nature of articles or services, rather than the more individualized characteristics of a product.",
+      "Descriptive term identifies a characteristic or quality of an article or service, such as color, odor, function, dimensions, or ingredients.",
+      "A suggestive term suggests, rather than describes, some particular characteristic of the goods or services to which it applies. It requires to consumer to exercise the imagination in order to draw a conclusion as to the nature of the goods and services.",
+      "Arbitrary terms are those that are real words, but arbitrary with respect to the product.",
+      "Fanciful terms are those that are entirely made up.",
+      "(i) The degree of similarity between the mark or trade name and the famous mark. (ii) The degree of inherent or acquired distinctiveness of the famous mark. (iii) The extent to which the owner of the famous mark is engaging in substantially exclusive use of the mark. (iv) The degree of recognition of the famous mark. (v) Whether the user of the mark or trade name intended to create an association with the famous mark. (vi) Any actual association between the mark or trade name and the famous mark.",
+      "(1) Use it first in commerce, or (2) registered the mark with the intent to use it in commerce, and then actually uses it",
+      "Work of authorship, fixation, creativity.",
+      "17 USC 102",
+      "Descriptive and nominative"
+    ]
+  },
+  "sara_entailment": {
+    "eval_method": "contained_in_output",
+    "instruction": "Determine whether the following statements are entailed under the statute.\n\nStatute: {{statute}}\nDescription: {{description}}\nStatement: {{question}}\nAnswer:",
+    "answer_space": [
+      "Entailment",
+      "Contradiction"
+    ]
+  },
+  "sara_numeric": {
+    "eval_method": "numeric_within_1pct",
+    "instruction": "Answer the following questions.\n\nStatute: {{statute}}\nDescription: {{description}}\nQuestion: {{question}}. State the amount first.\nAnswer:",
+    "answer_space": [
+      "<open-ended>"
+    ]
+  },
+  "scalr": {
+    "eval_method": "contained_in_output",
+    "instruction": "Given the following question presented in a court case, select the most relevant holding:\n\nQuestion: {{question}}\nChoices:\n0: {{choice_0}}\n1: {{choice_1}}\n2: {{choice_2}}\n3: {{choice_3}}\n4: {{choice_4}}\nAnswer:",
+    "answer_space": [
+      "3",
+      "4",
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  "ssla_company_defendants": {
+    "eval_method": "contained_in_output",
+    "instruction": "From each excerpt, extract the names of the defendants that are companies.\n\nExcerpt: {{text}}\nCompany defendants:",
+    "answer_space": [
+      "<open-ended>"
+    ]
+  },
+  "ssla_individual_defendants": {
+    "eval_method": "all_in_output",
+    "instruction": "From each excerpt, extract the names of the defendants that are individuals.\n\nExcerpt: {{text}}\nIndividual defendants:",
+    "answer_space": [
+      "<open-ended>"
+    ]
+  },
+  "ssla_plaintiff": {
+    "eval_method": "all_in_output",
+    "instruction": "Extract the name(s) of the plaintiff from the excerpt. If the plaintiff is not named, return \"Not named\"\n\nExcerpt: {{text}}\nPlaintiffs:",
+    "answer_space": [
+      "<open-ended>"
+    ]
+  },
+  "successor_liability": {
+    "eval_method": "all_in_output",
+    "instruction": "When one company sells its assets to another company, the purchaser is generally not liable for the seller’s debts and liabilities. There are four exceptions: \n\n1. the purchaser expressly agrees to be held liable (express agreement)\n\n2. the assets are fraudulently conveyed to the purchaser in order to avoid liability (fraudulent conveyance)\n\n3. there is a de facto merger between the purchaser and seller (de facto merger)\n\n4. the purchaser is a mere continuation of the seller (mere continuation)\n\nFor the following fact patterns, determine which exceptions apply.\n\nFacts: {{text}}\nException:",
+    "answer_space": [
+      "<open-ended>"
+    ]
+  },
+  "supply_chain_disclosure_best_practice_accountability": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose whether the retail seller or manufacturer maintains internal compliance procedures on company standards regarding human trafficking and slavery? This includes any type of internal accountability mechanism. Requiring independently of the supply to comply with laws does not qualify or asking for documentary evidence of compliance does not count either.  Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_best_practice_audits": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose whether the retail seller or manufacturer  performs any type of audit, or reserves the right to audit? Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_best_practice_certification": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose whether the retail seller or manufacturer requires direct suppliers to certify that they comply with labor and anti-trafficking laws? Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_best_practice_training": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose whether the retail seller or manufacturer  provides training to employees on human trafficking and slavery? Broad policies such as ongoing dialogue on mitigating risks of human trafficking and slavery or increasing managers and purchasers knowledge about health, safety and labor practices qualify as training. Providing training to contractors who failed to comply with human trafficking laws counts as training.  Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_best_practice_verification": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose whether the retail seller or manufacturer engages in verification and auditing as one practice, expresses that it may conduct an audit, or expressess that it is assessing supplier risks through a review of the US Dept. of Labor's List? Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_disclosed_accountability": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose to what extent, if any, that the retail seller or manufacturer maintains internal accountability standards and procedures for employees or contractors failing to meet company standards regarding slavery and trafficking? Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_disclosed_audits": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose to what extent, if any, that the retail seller or manufacturer conducts audits of suppliers to evaluate supplier compliance with company standards for trafficking and slavery in supply chains? The disclosure shall specify if the verification was not an independent, unannounced audit. Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_disclosed_certification": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose to what extent, if any, that the retail seller or manufacturer requires direct suppliers to certify that materials incorporated into the product comply with the laws regarding slavery and human trafficking of the country or countries in which they are doing business? Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_disclosed_training": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose to what extent, if any, that the retail seller or manufacturer provides company employees and management, who have direct responsibility for supply chain management, training on human trafficking and slavery, particularly with respect to mitigating risks within the supply chains of products? Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "supply_chain_disclosure_disclosed_verification": {
+    "eval_method": "contained_in_output",
+    "instruction": "{{text}}\n\nQuestion: Does the above disclosure meet the following criteria: Does the above statement disclose to what extent, if any, that the retail seller or manufacturer engages in verification of product supply chains to evaluate and address risks of human trafficking and slavery? If the company conducts verification], the disclosure shall specify if the verification was not conducted by a third party. Answer yes or no.\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "telemarketing_sales_rule": {
+    "eval_method": "contained_in_output",
+    "instruction": "The Telemarketing Sales Rule is provided by 16 C.F.R. § 310.3(a)(1) and 16 C.F.R. § 310.3(a)(2).\n\nQuestion: {{text}}\nAnswer:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "textualism_tool_dictionaries": {
+    "eval_method": "contained_in_output",
+    "instruction": "Label \"Yes\" if the paragraph interprets a statue using a dictionary definition for terms in the statute. The paragraph must reference that it is using a dictionary, or discuss the logic behind using a dictionary. Otherwise label \"No\".\n\nText: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "textualism_tool_plain": {
+    "eval_method": "contained_in_output",
+    "instruction": "Label \"Yes\" if the paragraph interprets a statue using the plain or ordinary meaning of the terms in the statute. The paragraph must reference that it is using plain meaning, or discuss the logic behind using plain meaning. Otherwise label \"No\".\n\nText: {{text}}\nLabel:",
+    "answer_space": [
+      "Yes",
+      "No"
+    ]
+  },
+  "ucc_v_common_law": {
+    "eval_method": "contained_in_output",
+    "instruction": "The UCC (through Article 2) governs the sale of goods, which are defined as moveable tangible things (cars, apples, books, etc.), whereas the common law governs contracts for real estate and services. For the following contracts, determine if they are governed by the UCC or by common law.\n\nContract: {{contract}}\nGoverned by:",
+    "answer_space": [
+      "Common Law",
+      "UCC"
+    ]
+  },
+  "unfair_tos": {
+    "eval_method": "contained_in_output",
+    "instruction": "Classify each clause by type. Options: Arbitration, Unilateral change, Content removal, Jurisdiction, Choice of law, Limitation of liability, Unilateral termination, Contract by using, Other\n\nClause: {{text}}\nLabel:",
+    "answer_space": [
+      "Other",
+      "Contract by using",
+      "Unilateral termination",
+      "Limitation of liability",
+      "Arbitration",
+      "Content removal",
+      "Unilateral change",
+      "Choice of law",
+      "Jurisdiction"
+    ]
+  }
+}
